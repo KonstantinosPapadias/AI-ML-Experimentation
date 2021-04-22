@@ -30,5 +30,5 @@ You can try the programs on your own. Assuming a recent version of gcc as your c
      
      
 Of course you can try the whole process again!! Clean the mess of files that has been created with $ make clean and then:
-* Play with the number of predefined number of nodes in the first and second hidden layers of the mlp. Change the values of H1 and H2 in #define H1 8 (which is the number of nodes in the first hidden layer, predefined as 8), and #define H2 5 (which is the number of nodes in the second hidden layer, predefined as 5) in lines 9 and 10 in the mlp_classifier.c file.
-* Play with the number of predefined neighbors in k-means. Change the calue of M in #define M 5 (which is the number of groups the k-means algorithm will group the data) in line 12 in kmeans.c file).
+* Play with the number of predefined number of neurons in the first and second hidden layers of the mlp. Change the values of H1 and H2 in #define H1 8 (which is the number of neurons in the first hidden layer, predefined as 8), and #define H2 5 (which is the number of neurons in the second hidden layer, predefined as 5) in lines 9 and 10 in the mlp_classifier.c file.
+* Play with the number of predefined neighbors in k-means. Change the value of M in #define M 5 (which is the number of groups the k-means algorithm will group the data) in line 12 in kmeans.c file).

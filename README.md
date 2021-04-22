@@ -14,16 +14,18 @@ You can try the programs on your own. Assuming a recent version of gcc as your c
 1. to train the mlp and see how it learns
     * compiling the programs (assuming a recent version of gcc as your compiler) - $ make all
     * creating the first dataset that will be used as training and test set for the multilayer perceptron - $ ./dataset1
-    * visualizing the dataset you just created - $ gnuplot; gnuplot> plot "C1.dat", "C2.dat", "C3.dat", "C4.dat"
+    * visualizing the dataset you just created - $ ./plot_dataset1.sh
     * training and testing the mlp - $ ./mlp_classifier
-    * visualizing the correct and wrong decisions of the mlp - $ gnuplot; gnuplot> plot "correct_decisions.dat", "wrong_decisions.dat" linetype 1 linewidth 6 linecolor -1
+    * visualizing the correct and wrong decisions of the mlp - $ ./plot_mlp_decisions.sh
   
   
 2. to try the k-means algorithm and see how it seperated the dataset into a number of groups
     * creating the second dataset that will get seperated in groups - $ ./dataset2
-    * visualizing the dataset you just created - $ gnuplot; gnuplot> plot "dataset2.dat"
+    * visualizing the dataset you just created - $ ./plot_dataset2.sh
     * running the k-means algorithm to group the second dataset - $ ./kmeans
-    * visualizing the grouped dataset according to the k-means algorithm - $ gnuplot; gnuplot> plot "kmeans_Team0.dat", "kmeans_Team1.dat", ...., "kmeans_Team(M-1).dat" , "kmeans_centroids.dat" linetype 1 linewidth 6 linecolor -1 (example for 5 centroids - gnuplot> plot "kmeans_Team0.dat", "kmeans_Team1.dat", "kmeans_Team2.dat", "kmeans_Team3.dat", "kmeans_Team4.dat", "kmeans_centroids.dat" linetype 1 linewidth 6 linecolor -1)
+    * visualizing the grouped dataset according to the k-means algorithm - You can use the bash script - $ ./plot_kmeans_5_groups.sh, to plot easily for 5 groups. Else $ gnuplot; gnuplot> plot "kmeans_Team0.dat", "kmeans_Team1.dat", ...., "kmeans_Team(M-1).dat" , "kmeans_centroids.dat" linetype 1 linewidth 6 linecolor -1, where the M in "kmeans_Team(M-1).dat" is the number of groups - 1. Example for 5 centroids - gnuplot> plot "kmeans_Team0.dat", "kmeans_Team1.dat", "kmeans_Team2.dat", "kmeans_Team3.dat", "kmeans_Team4.dat", "kmeans_centroids.dat" linetype 1 linewidth 6 linecolor -1. 
+
+If the bash scripts (*.sh) need permission to execute you can do so with $ chmod +x name_of_script.sh
      
      
      

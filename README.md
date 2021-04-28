@@ -10,16 +10,17 @@ The multilayer perceptron after being trained with the input training set of poi
 
 You can try the programs on your own. Assuming a recent version of gcc as your compiler and a linux distro as your os (so your shell is bash and you have gnuplot installed), use the Makefile:
 
+0. to compile all programs (assuming a recent version of gcc as your compiler):
+    * $ make all
 
-1. to train the mlp and see how it learns
-    * compiling the programs (assuming a recent version of gcc as your compiler) - $ make all
+1. to train the mlp and see how it learns (after you have compiled the programs):
     * creating the first dataset that will be used as training and test set for the multilayer perceptron - $ ./dataset1
     * visualizing the dataset you just created - $ ./plot_dataset1.sh
     * training and testing the mlp - $ ./mlp_classifier
     * visualizing the correct and wrong decisions of the mlp - $ ./plot_mlp_decisions.sh
   
   
-2. to try the k-means algorithm and see how it seperated the dataset into a number of groups
+2. to try the k-means algorithm and see how it seperated the dataset into a number of groups (after you have compiled the programs):
     * creating the second dataset that will get seperated in groups - $ ./dataset2
     * visualizing the dataset you just created - $ ./plot_dataset2.sh
     * running the k-means algorithm to group the second dataset - $ ./kmeans
